@@ -7,3 +7,6 @@ table, td{
   border-collapse: collapse;
   padding: 5px;
 }
+img {
+  width: 30px;
+}

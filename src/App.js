@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import MovieBox from './MovieBox';
 import Movies from './Movies';
 import movies from './Movies';
+import Stars from './Stars';
 
  
 
@@ -33,19 +34,39 @@ import movies from './Movies';
  
 // export default App;
 
+// class App extends React.Component {
+//   state = {
+//     num
+//   }
+//   render() { 
+//     return (
+//       <div className="App">
+//         {movies.map( i =>
+//           <MovieBox 
+//             key = {uuidv4()}
+//             title = {i.title}
+//             year = {i.year}
+//             director = {i.director}
+//             genre = {i.genre}
+//             rate = {i.rate}
+//             star = {'https://w7.pngwing.com/pngs/964/685/png-transparent-yellow-five-pointed-star-yellow-star-five-pointed-star.png'}
+//             num = {i.rate}
+//         /> )}
+//       </div>
+//       // <img src="https://w7.pngwing.com/pngs/964/685/png-transparent-yellow-five-pointed-star-yellow-star-five-pointed-star.png" alt="img" />
+//       )
+//   }
+// }
+ 
+// export default App;
+
+import ToDoList from './ToDoList';
 function App() {
   return (
     <div className="App">
-      {movies.map( i =>
-        <MovieBox 
-          key = {uuidv4()}
-          title = {i.title}
-          year = {i.year}
-          director = {i.director}
-          genre = {i.genre}
-          rate = {i.genre}
-      />)}
-    </div>)}
+      <ToDoList/>
+    </div>
+    )}
 
 
 export default App;
